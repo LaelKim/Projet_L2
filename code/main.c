@@ -9,8 +9,8 @@
 #include "timer.c"
 
 //Exemples de résultats attendus, pour une liste à 5 niveaux
-/*
-int main() {
+
+void Partie1_Test_niveaux_null() {
     //niveau a 5
     t_level_list *myList = create_level_list(5);
 
@@ -27,10 +27,10 @@ int main() {
     return 0;
 }
 
-*/
 
-/*
-int main() {
+
+
+void Partie1_niveaux_implementees() {
     //niveau a 5
     t_level_list *myList = create_level_list(5);
 
@@ -55,9 +55,9 @@ int main() {
 
     return 0;
 }
-*/
 
-int main() {
+
+void partie2() {
     int initial_level = 7;
     int final_level = 16;
     int searches_per_level = 10000; // Nombre de recherches par niveau
@@ -112,4 +112,10 @@ int main() {
 
     fclose(log_file);
     return 0;
+}
+
+int main(){
+        Partie1_Test_niveaux_null();
+        Partie1_niveaux_implementees();
+        partie2();
 }
